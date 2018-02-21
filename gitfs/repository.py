@@ -297,6 +297,7 @@ class Repository(object):
         types = {
             GIT_FILEMODE_LINK: {
                 'st_mode': S_IFLNK | 0o444,
+                'st_nlink': 1
             }, GIT_FILEMODE_TREE: {
                 'st_mode': S_IFDIR | 0o555,
                 'st_nlink': 2
